@@ -4,13 +4,13 @@ This is a simple golang CLI to enable users to easily start AWS Systems Manager
 Sessions from the terminal, without having to remember the command themselves 
 or list instance IDs.
 
-## Usage
+## Usage
 
 With some enviroment variables for AWS set, just run `ssmcli`. The script will list existing sessions first so you can reconnect if one died, then it will list all instances.
 
 Session Manager needs to be working for this script to work, it's just a wrapper! So if the agent isn't installed or can't connect to AWS, it won't work.
 
-## Detailed Usage
+## Detailed Usage
 
 If you've no profile or variables or token, you'll get this:
 
@@ -84,7 +84,7 @@ If you want to forward ports, then you get the following:
     DEBU[0022] selected port                                 port=8080
     INFO[0022] run port forwarding                           port=8080
 
-## Building
+## Building
 
 Needs a version of Go that supports modules, and then:
 
