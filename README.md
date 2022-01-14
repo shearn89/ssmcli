@@ -4,6 +4,8 @@ This is a simple golang CLI to enable users to easily start AWS Systems Manager
 Sessions from the terminal, without having to remember the command themselves 
 or list instance IDs.
 
+For list of changes/release, see CHANGELOG.md
+
 ## Usage
 
 With some enviroment variables for AWS set, just run `ssmcli`. The script will list existing sessions first so you can reconnect if one died, then it will list all instances.
