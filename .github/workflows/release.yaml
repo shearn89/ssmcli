@@ -1,4 +1,4 @@
-name: Go
+name: Release
 
 on:
   push:
@@ -17,12 +17,12 @@ jobs:
       with:
         go-version: 1.17
 
-    - name: Build
-      run: go build -v ./cmd/ssmcli
-
     - name: Test
       run: go test -v ./...
     
+    - name: Build
+      run: go build -v ./cmd/ssmcli
+
     - name: release
       uses: actions/create-release@v1
       id: create_release
@@ -42,5 +42,6 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./ssmcli
+        asset_name: ssmcli
         asset_content_type: application/octet-stream
 
