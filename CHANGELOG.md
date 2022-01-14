@@ -12,7 +12,3 @@
 * Initial working version
 * Supports resume existing session
 * Supports creating a new session
-
-# TODO
-
-* Add makefile with build-linux/windows/darwin, output in bin/ folder. Tarred up
