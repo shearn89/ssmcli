@@ -6,6 +6,10 @@ or list instance IDs.
 
 For list of changes/release, see CHANGELOG.md
 
+## Dependencies
+
+At the moment, this tool requires both the [AWS CLI](https://aws.amazon.com/cli/) and the [Session Manager Plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html).
+
 ## Usage
 
 With some enviroment variables for AWS set, just run `ssmcli`. The script will list existing sessions first so you can reconnect if one died, then it will list all instances.
